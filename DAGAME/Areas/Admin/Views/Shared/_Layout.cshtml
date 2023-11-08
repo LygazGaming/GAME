@@ -1,0 +1,103 @@
+﻿﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quản lý Duckie Shop</title>
+    <!-- Bootstrap -->
+    <link href="~/Content/clients/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="~/Content/clients/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="~/Content/clients/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="~/Content/clients/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- bootstrap-wysiwyg -->
+    <link href="~/Content/clients/vendors/google-code-prettify/bin/prettify.min.css" rel="stylesheet">
+    <!-- Select2 -->
+    <link href="~/Content/clients/vendors/select2/dist/css/select2.min.css" rel="stylesheet">
+    <!-- Switchery -->
+    <link href="~/Content/clients/vendors/switchery/dist/switchery.min.css" rel="stylesheet">
+    <!-- starrr -->
+    <link href="~/Content/clients/vendors/starrr/dist/starrr.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="~/Content/clients/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="~/Content/clients/build/css/custom.min.css" rel="stylesheet">
+</head>
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="/home" class="site_title"><i class="fa fa-gamepad"></i> <span>Duckie Shop</span></a>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="profile clearfix">
+                        <div class="profile_pic">
+                            <img src="~/Content/assets/dist/img/avatar2.png" alt="..." class="img-circle profile_img">
+                        </div>
+                        <div class="profile_info">
+                            <span>Welcome </span>
+                            <h2>Admin</h2>
+                        </div>
+                    </div>
+                    <!-- /menu profile quick info -->
+                    @Html.Partial("_PartiaSideBar")
+                </div>
+            </div>
+            <!-- page content -->
+            <div class="right_col" role="main">
+                @RenderBody()
+
+            </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="~/Content/clients/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="~/Content/clients/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="~/Content/clients/vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="~/Content/clients/vendors/nprogress/nprogress.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="~/Content/clients/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="~/Content/clients/vendors/iCheck/icheck.min.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="~/Content/clients/vendors/moment/min/moment.min.js"></script>
+    <script src="~/Content/clients/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- bootstrap-wysiwyg -->
+    <script src="~/Content/clients/vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js"></script>
+    <script src="~/Content/clients/vendors/jquery.hotkeys/jquery.hotkeys.js"></script>
+    <script src="~/Content/clients/vendors/google-code-prettify/src/prettify.js"></script>
+    <!-- jQuery Tags Input -->
+    <script src="~/Content/clients/vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script>
+    <!-- Switchery -->
+    <script src="~/Content/clients/vendors/switchery/dist/switchery.min.js"></script>
+    <!-- Select2 -->
+    <script src="~/Content/clients/vendors/select2/dist/js/select2.full.min.js"></script>
+    <!-- Parsley -->
+    <script src="~/Content/clients/vendors/parsleyjs/dist/parsley.min.js"></script>
+    <!-- Autosize -->
+    <script src="~/Content/clients/vendors/autosize/dist/autosize.min.js"></script>
+    <!-- jQuery autocomplete -->
+    <script src="~/Content/clients/vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js"></script>
+    <!-- starrr -->
+    <script src="~/Content/clients/vendors/starrr/dist/starrr.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="~/Content/clients/build/js/custom.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="~/Scripts/autoNumeric-1.9.45.js"></script>
+    <script src="~/Content/ckeditor/ckeditor.js"></script>
+    <script src="~/Content/ckfinder/ckfinder.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
