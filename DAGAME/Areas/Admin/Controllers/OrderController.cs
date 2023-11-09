@@ -70,7 +70,6 @@ on od.ProductId equals p.Id
                         select new
                         {
                             CreatedDate = o.CreatedDate,
-                            Quantity = od.Quantity,
                             Price = od.Price,
                             OriginalPrice = p.Price
                         };
@@ -87,8 +86,8 @@ on od.ProductId equals p.Id
             var result = query.GroupBy(x => DbFunctions.TruncateTime(x.CreatedDate)).Select(r => new
             {
                 Date = r.Key.Value,
-                TotalBuy = r.Sum(x => x.OriginalPrice * x.Quantity), // tổng giá bán
-                TotalSell = r.Sum(x => x.Price * x.Quantity) // tổng giá mua
+                TotalBuy = r.Sum(x => x.OriginalPrice ), // tổng giá bán
+                TotalSell = r.Sum(x => x.Price ) // tổng giá mua
             }).Select(x => new RevenueStatisticViewModel
             {
                 Date = x.Date,

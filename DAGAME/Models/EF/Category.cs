@@ -25,13 +25,6 @@ namespace DAGAME.Models.EF
         //public string TypeCode { get; set; }
         public string Link { get; set; }
         public string Description { get; set; }
-
-        [StringLength(150)]
-        public string SeoTitle { get; set; }// seo tu khoa cho google
-        [StringLength(250)]
-        public string SeoDescription { get; set; }
-        [StringLength(150)]
-        public string SeoKeywords { get; set; }
         public bool IsActive { get; set; }
         public int Position { get; set; }
         public ICollection<News> News { get; set; }

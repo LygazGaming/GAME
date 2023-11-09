@@ -68,10 +68,6 @@ namespace DAGAME.Areas.Admin.Controllers
                 }
                 model.CreatedDate = DateTime.Now;
                 model.ModifiedDate = DateTime.Now;
-                if (string.IsNullOrEmpty(model.SeoTitle))
-                {
-                    model.SeoTitle = model.Title;
-                }
                 if (string.IsNullOrEmpty(model.Alias))
                     model.Alias = DAGAME.Models.Common.Filter.FilterChar(model.Title);
                 db.Products.Add(model);

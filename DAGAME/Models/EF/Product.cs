@@ -46,14 +46,6 @@ namespace DAGAME.Models.EF
         public bool IsHot { get; set; }
         public bool IsActive { get; set; }
         public int ProductCategoryId { get; set; }
-
-        [StringLength(250)]
-        public string SeoTitle { get; set; }
-        [StringLength(500)]
-        public string SeoDescription { get; set; }
-        [StringLength(250)]
-        public string SeoKeywords { get; set; }
-
         public virtual ProductCategory ProductCategory { get; set; }
         public virtual ICollection<ProductImage> ProductImage { get; set; }
         public virtual ICollection<OrderDetail> OrderDetails { get; set; }

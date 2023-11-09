@@ -179,7 +179,6 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\AccountController.cs" />
-    <Compile Include="Areas\Admin\Controllers\AdvController.cs" />
     <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\NewsController.cs" />
@@ -214,13 +213,20 @@
     <Compile Include="Migrations\202311071641575_DL.designer.cs">
       <DependentUpon>202311071641575_DL.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202311090929568_Gg.cs" />
+    <Compile Include="Migrations\202311090929568_Gg.designer.cs">
+      <DependentUpon>202311090929568_Gg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202311090934501_c.cs" />
+    <Compile Include="Migrations\202311090934501_c.designer.cs">
+      <DependentUpon>202311090934501_c.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CommonAbstract.cs" />
     <Compile Include="Models\Common\Filter.cs" />
     <Compile Include="Models\Common\ThongKeTruyCap.cs" />
     <Compile Include="Models\CustomerViewModel.cs" />
-    <Compile Include="Models\EF\Adv.cs" />
     <Compile Include="Models\EF\Category.cs" />
     <Compile Include="Models\EF\Contact.cs" />
     <Compile Include="Models\EF\News.cs" />
@@ -8309,7 +8315,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="Areas\Admin\Views\Adv\" />
     <Folder Include="Content\ckfinder\userfiles\" />
     <Folder Include="Uploads\files\" />
     <Folder Include="Uploads\flash\" />
@@ -8359,6 +8364,12 @@
     <EmbeddedResource Include="Migrations\202311071641575_DL.resx">
       <DependentUpon>202311071641575_DL.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311090929568_Gg.resx">
+      <DependentUpon>202311090929568_Gg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202311090934501_c.resx">
+      <DependentUpon>202311090934501_c.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
