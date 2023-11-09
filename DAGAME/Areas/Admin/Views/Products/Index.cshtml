@@ -45,6 +45,7 @@
                         <th>Ngày tạo</th>
                         <th>Home</th>
                         <th>Hiển thị</th>
+                        <th>Sale</th>
                         <th style="width:150px;">Chức năng</th>
                     </tr>
                 </thead>
@@ -71,13 +72,13 @@
                                 <td>@item.ProductCategory.Title</td>
                                 <td>@DAGAME.Common.Common.FormatNumber(item.Price, 0)</td>
                                 <td>@item.CreatedDate.ToString("dd/MM/yyyy")</td>
-                                <td class="text-center">
+                                <td>
                                     <a href='#' data-id="@item.Id" class="btnHome">@Html.Raw(strCheckHome)</a>
                                 </td>
-                                <td class="text-center">
+                                <td>
                                     <a href='#' data-id="@item.Id" class="btnSale">@Html.Raw(strCheckSale)</a>
                                 </td>
-                                <td class="text-center">
+                                <td>
                                     <a href='#' data-id="@item.Id" class="btnActive">@Html.Raw(strCheck)</a>
                                 </td>
                                 <td>
